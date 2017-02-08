@@ -1,81 +1,116 @@
 /* Sticky footer styles
 -------------------------------------------------- */
 
-html,
-body {
-  height: 100%;
-  /* The html and body elements cannot have any padding or margin. */
+html, body {
+    height: 100%;
+    /* The html and body elements cannot have any padding or margin. */
 }
+
+body {
+    background: url("../images/concrete_seamless.png");
+}
+
+.wrapper {
+    max-width: 960px;
+}
+
 
 /* Wrapper for page content to push down footer */
+
 #wrap {
-  min-height: 100%;
-  height: auto !important;
-  height: 100%;
-  /* Negative indent footer by its height */
-  margin: 0 auto -60px;
-  /* Pad bottom by footer height */
-  padding: 0 0 60px;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /* Negative indent footer by its height */
+    margin: 0 auto -60px;
+    /* Pad bottom by footer height */
+    padding: 0 0 60px;
 }
 
+
 /* Set the fixed height of the footer here */
+
 #footer {
-  height: 60px;
-  background-color: #f5f5f5;
+    height: 60px;
+    background-color: #f5f5f5;
 }
 
 
 /* Custom page CSS
 -------------------------------------------------- */
 
-
-#wrap > .container {
-  padding: 80px 15px 0;
+#wrap>.container {
+    padding: 80px 15px 0;
 }
+
 .container .credit {
-  margin: 20px 0;
+    margin: 20px 0;
 }
 
-#footer > .container {
-  padding-left: 15px;
-  padding-right: 15px;
+#footer>.container {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 code {
-  font-size: 80%;
+    font-size: 80%;
 }
 
-ul{
-  list-style: none;
-  margin:0;
-  padding:0;
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .panel-title-sizeXL {
-  font-size: 24px;
+    font-size: 24px;
 }
 
 .panel-pic {
-  max-width: 100%;
-  height: auto;
+    max-width: 100%;
+    height: auto;
 }
-.panel-body li{
-  display:inline;
-}
-.panel-body li img{
-  width:32%;
-  display:inline;
-  padding:10px;
 
+.panel-body li {
+    display: inline;
 }
+
+.panel-body li img {
+    width: 32%;
+    display: inline;
+    padding: 10px;
+}
+
+.panel-body li img:hover {
+    border-bottom: 2px solid #4aaaa5;
+}
+
 .tealFont {
-  color: #4aaaa5 !important;
+    color: #4aaaa5 !important;
 }
 
-.navbar-brand{
-  font-size:28px;
+.btn-teal {
+    background-color: #4aaaa5;
+    color: white;
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 28px;
 }
 
 .col-margin-bot {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.col-gutter {
+    padding: 15px !important;
+    position: relative;
+}
+
+.panel-subtitle {
+    text-align: center;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 10px;
 }
